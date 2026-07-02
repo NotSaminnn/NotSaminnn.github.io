@@ -195,7 +195,7 @@
   var form = $("#contact-form");
   if (form) {
     var note = $("#form-note");
-    var EMAIL = "rsgidristee@gmail.com";
+    var EMAIL = "abrarsamin100@gmail.com";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       // NB: use getElementById — `form.name` resolves to the form's own `name`

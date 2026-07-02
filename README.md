@@ -117,7 +117,7 @@ Everything is plain text — open the files and edit. The most common changes:
 
 | What | Where |
 |------|-------|
-| **Contact email** | Search `rsgidristee@gmail.com` in `index.html` and `script.js` and replace everywhere |
+| **Contact email** | Search `abrarsamin100@gmail.com` in `index.html` and `script.js` and replace everywhere |
 | **Name / headline / bio** | `index.html` — hero and `#about` sections |
 | **Publications** | `index.html` — the `#publications` section (each `<li class="pub-card">`) |
 | **Experience / education** | `index.html` — `#experience`, `#education` sections |
