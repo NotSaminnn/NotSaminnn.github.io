@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notsaminnn.github.io/sitemap.xml

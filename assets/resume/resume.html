@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abrar Samin — Curriculum Vitae</title>
+<style>
+  /* Print-optimised CV. Rendered to PDF with Chrome headless (--print-to-pdf). */
+  @page { size: A4; margin: 14mm 15mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1f36;
+    --muted: #4b5468;
+    --brand: #4338ca;
+    --line: #d8dce6;
+  }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    font-size: 10.4px;
+    line-height: 1.5;
+  }
+  a { color: var(--brand); text-decoration: none; }
+
+  header { border-bottom: 2.5px solid var(--brand); padding-bottom: 10px; margin-bottom: 14px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 26px; letter-spacing: 0.4px; color: #10152b; }
+  .role { color: var(--brand); font-weight: 600; font-size: 11.5px; margin-top: 2px; letter-spacing: 0.3px; }
+  .contact { margin-top: 7px; color: var(--muted); font-size: 9.8px; }
+  .contact span { white-space: nowrap; }
+  .sep { color: var(--line); margin: 0 7px; }
+
+  section { margin-top: 13px; }
+  h2 {
+    font-family: Georgia, serif; font-size: 12px; text-transform: uppercase;
+    letter-spacing: 1.4px; color: var(--brand); border-bottom: 1px solid var(--line);
+    padding-bottom: 3px; margin-bottom: 7px;
+  }
+  p { margin-bottom: 4px; }
+  .muted { color: var(--muted); }
+
+  .entry { margin-bottom: 9px; }
+  .entry:last-child { margin-bottom: 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .row .title { font-weight: 700; font-size: 11px; }
+  .row .date { color: var(--muted); font-size: 9.6px; white-space: nowrap; font-weight: 600; }
+  .sub { color: var(--muted); font-style: italic; margin-bottom: 3px; }
+  ul { margin: 3px 0 0 15px; }
+  li { margin-bottom: 2.5px; }
+
+  .pub { margin-bottom: 7px; padding-left: 10px; border-left: 2px solid var(--line); }
+  .pub .venue { color: var(--muted); font-style: italic; }
+  .pub b { color: #10152b; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 20px; }
+  .skill-line b { display: inline-block; min-width: 0; color: #10152b; }
+  .tag-row { margin-bottom: 3px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>ABRAR SAMIN</h1>
+    <div class="role">Computer Science &amp; Engineering Graduate · AI/ML Researcher · Teaching Assistant</div>
+    <div class="contact">
+      <span>Dhaka, Bangladesh</span><span class="sep">|</span>
+      <span>+880 1775 415315</span><span class="sep">|</span>
+      <span><a href="mailto:rsgidristee@gmail.com">rsgidristee@gmail.com</a></span><span class="sep">|</span>
+      <span><a href="https://github.com/NotSaminnn">github.com/NotSaminnn</a></span><span class="sep">|</span>
+      <span><a href="https://linkedin.com/in/abrarsamin12">linkedin.com/in/abrarsamin12</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Computer Science and Engineering graduate from BRAC University (CGPA 3.97/4.00) with three IEEE-published
+    research papers in machine learning, computer vision, and explainable AI. Served as an Undergraduate Teaching
+    Assistant for core courses including Data Structures and Algorithms, and contributed to BRAC University-funded
+    research under the Research Seed Grant Initiative (RSGI), including AI-based assistive technology for accessibility.
+    Strong foundation in machine learning, NLP, computer vision, and full-stack development, with a keen interest in
+    teaching, mentoring, and advancing applied AI research in a university setting.</p>
+  </section>
+
+  <section>
+    <h2>Research Interests</h2>
+    <p>Machine Learning · Computer Vision · Explainable AI (XAI) · Embedded / Edge AI · Assistive Technology · Biomedical Signal Processing</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><span class="title">BRAC University</span><span class="date">2022 – 2026</span></div>
+      <div class="sub">B.Sc. in Computer Science and Engineering — Dhaka, Bangladesh</div>
+      <p class="muted">CGPA: 3.97 / 4.00</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <div class="pub">
+      Reshad Ul Karim, Sammam Mahdi, <b>Abrar Samin</b>, Tasnim Ferdous, Aniqua Nusrat Zereen, M. Abdullah-Al-Wadud,
+      and Jia Uddin, &ldquo;Optimizing Stroke Recognition with MediaPipe and Machine Learning: An Explainable AI
+      Approach for Facial Landmark Analysis,&rdquo; <span class="venue">IEEE Access</span>, vol. 13, 2025,
+      doi: <a href="https://doi.org/10.1109/ACCESS.2025.3550577">10.1109/ACCESS.2025.3550577</a>.
+    </div>
+    <div class="pub">
+      Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat Zereen, &ldquo;Machine
+      Learning Approaches in Photoplethysmography-Based Sleep Stage Classification,&rdquo; <span class="venue">in Proc.
+      2024 IEEE 2nd Int. Conf. on Electrical, Automation and Computer Engineering (ICEACE)</span>, Dec. 2024.
+    </div>
+    <div class="pub">
+      Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat Zereen, &ldquo;Improved
+      Photoplethysmography-Based Four-Stage Sleep Classification with Explainable AI-Driven Machine Learning,&rdquo;
+      <span class="venue">in Proc. 2024 IEEE 2nd Int. Conf. on Electrical, Automation and Computer Engineering
+      (ICEACE)</span>, Dec. 2024, pp. 654–658.
+    </div>
+  </section>
+
+  <section>
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Undergraduate Researcher</span><span class="date">2024 – Present</span></div>
+      <div class="sub">Research Seed Grant Initiative (RSGI), BRAC University — Dhaka, Bangladesh</div>
+      <ul>
+        <li>Contributed to a BRAC University-funded research project under the Research Seed Grant Initiative (RSGI)
+        developing an AI-powered assistive navigation system to support safe, independent mobility for blind and
+        low-vision users.</li>
+        <li>Worked on computer vision and on-device (edge) AI components for a low-cost wearable platform, advancing
+        the system from a validated proof-of-concept toward a deployable prototype intended for real-world,
+        ethics-approved field trials with blind and low-vision users.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Teaching Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="title">Undergraduate Teaching Assistant</span><span class="date">2024 – 2026</span></div>
+      <div class="sub">Department of Computer Science and Engineering, BRAC University — Dhaka, Bangladesh</div>
+      <ul>
+        <li>Served as Teaching Assistant for core undergraduate courses in Data Structures and Algorithms, supporting
+        lectures, lab sessions, and student consultation hours.</li>
+        <li>Guided students through programming assignments and algorithmic problem-solving, strengthening their
+        understanding of fundamental data structures and algorithm design.</li>
+        <li>Assisted with evaluating assignments and provided constructive feedback to help students improve their
+        performance.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="tag-row skill-line"><b>Programming Languages:</b> Python, Java, C++, JavaScript</div>
+    <div class="tag-row skill-line"><b>Frameworks &amp; Libraries:</b> Node.js, Express.js, MediaPipe</div>
+    <div class="tag-row skill-line"><b>Databases:</b> MySQL, MongoDB</div>
+    <div class="tag-row skill-line"><b>Tools &amp; Technologies:</b> Git, REST APIs, Machine Learning frameworks, Computer Vision libraries</div>
+  </section>
+
+  <section>
+    <h2>Awards &amp; Achievements</h2>
+    <ul>
+      <li>2nd Place — BRAC University RoboSoccer Competition</li>
+      <li>1st Runner-Up — System Analysis and Design Project Showcase (Summer 2025)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p>English — Professional working proficiency &nbsp;·&nbsp; Bangla — Native proficiency</p>
+  </section>
+</body>
+</html>

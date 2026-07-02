@@ -1,0 +1,10 @@
+# Local-only files that are NOT part of the published website.
+# (The site uses copies inside assets/ — these root originals stay on your
+#  machine but are kept out of the public GitHub Pages repo.)
+/NEW_PROJECT_GUIDE.md
+/samin_photo.jpg
+/AbrarSamin_CV.docx
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
