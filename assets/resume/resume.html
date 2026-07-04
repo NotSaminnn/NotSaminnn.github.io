@@ -55,6 +55,20 @@
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 20px; }
   .skill-line b { display: inline-block; min-width: 0; color: #10152b; }
   .tag-row { margin-bottom: 3px; }
+
+  /* Publication categories (Journal / Conference) */
+  .pubcat {
+    font-weight: 700; font-size: 9.3px; text-transform: uppercase; letter-spacing: 0.7px;
+    color: var(--brand); margin: 9px 0 4px;
+  }
+  .pubcat.first { margin-top: 2px; }
+  .pubnum { font-weight: 700; color: #10152b; }
+  .refs { color: var(--muted); font-style: italic; }
+
+  /* Keep entries whole across page breaks — professional CV pagination */
+  section { page-break-inside: avoid; break-inside: avoid; }
+  .entry, .pub { page-break-inside: avoid; break-inside: avoid; }
+  h2 { page-break-after: avoid; break-after: avoid; }
 </style>
 </head>
 <body>
@@ -102,22 +116,25 @@
 
   <section>
     <h2>Publications</h2>
+    <div class="pubcat first">Journal Articles</div>
     <div class="pub">
-      Reshad Ul Karim, Sammam Mahdi, <b>Abrar Samin</b>, Tasnim Ferdous, Aniqua Nusrat Zereen, M. Abdullah-Al-Wadud,
-      and Jia Uddin, &ldquo;Optimizing Stroke Recognition with MediaPipe and Machine Learning: An Explainable AI
-      Approach for Facial Landmark Analysis,&rdquo; <span class="venue">IEEE Access</span>, vol. 13, 2025,
-      doi: <a href="https://doi.org/10.1109/ACCESS.2025.3550577">10.1109/ACCESS.2025.3550577</a>.
+      <span class="pubnum">[J1]</span> Reshad Ul Karim, Sammam Mahdi, <b>Abrar Samin</b>, Tasnim Ferdous, Aniqua Nusrat Zereen,
+      M. Abdullah-Al-Wadud, and Jia Uddin, &ldquo;Optimizing Stroke Recognition with MediaPipe and Machine Learning:
+      An Explainable AI Approach for Facial Landmark Analysis,&rdquo; <span class="venue">IEEE Access</span>, vol. 13,
+      2025, doi: <a href="https://doi.org/10.1109/ACCESS.2025.3550577">10.1109/ACCESS.2025.3550577</a>.
     </div>
+    <div class="pubcat">Conference Papers</div>
     <div class="pub">
-      Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat Zereen, &ldquo;Machine
-      Learning Approaches in Photoplethysmography-Based Sleep Stage Classification,&rdquo; <span class="venue">in Proc.
-      2024 IEEE 2nd Int. Conf. on Electrical, Automation and Computer Engineering (ICEACE)</span>, Dec. 2024.
-    </div>
-    <div class="pub">
-      Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat Zereen, &ldquo;Improved
-      Photoplethysmography-Based Four-Stage Sleep Classification with Explainable AI-Driven Machine Learning,&rdquo;
+      <span class="pubnum">[C1]</span> Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat
+      Zereen, &ldquo;Machine Learning Approaches in Photoplethysmography-Based Sleep Stage Classification,&rdquo;
       <span class="venue">in Proc. 2024 IEEE 2nd Int. Conf. on Electrical, Automation and Computer Engineering
-      (ICEACE)</span>, Dec. 2024, pp. 654–658.
+      (ICEACE)</span>, Dec. 2024.
+    </div>
+    <div class="pub">
+      <span class="pubnum">[C2]</span> Tasnim Ferdous, Reshad Ul Karim, <b>Abrar Samin</b>, Sammam Mahdi, and Aniqua Nusrat
+      Zereen, &ldquo;Improved Photoplethysmography-Based Four-Stage Sleep Classification with Explainable AI-Driven
+      Machine Learning,&rdquo; <span class="venue">in Proc. 2024 IEEE 2nd Int. Conf. on Electrical, Automation and
+      Computer Engineering (ICEACE)</span>, Dec. 2024, pp. 654–658.
     </div>
   </section>
 
@@ -154,7 +171,7 @@
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>Selected Projects</h2>
     <div class="entry">
       <div class="row"><span class="title">WeHeal — Healthcare Innovation Platform</span><span class="date"><a href="https://weheal.live/">weheal.live</a></span></div>
       <p>An AI-powered, all-in-one healthcare platform for patient care and medical diagnostics — online doctor
@@ -177,16 +194,22 @@
   </section>
 
   <section>
-    <h2>Awards &amp; Achievements</h2>
+    <h2>Honors &amp; Awards</h2>
     <ul>
-      <li>2nd Place — BRAC University RoboSoccer Competition</li>
-      <li>1st Runner-Up — System Analysis and Design Project Showcase (Summer 2025)</li>
+      <li>Dean&rsquo;s List — recognized for academic excellence, BRAC University.</li>
+      <li>2nd Place — BRAC University RoboSoccer Competition.</li>
+      <li>1st Runner-Up — System Analysis and Design Project Showcase, Summer 2025 (for WeHeal).</li>
     </ul>
   </section>
 
   <section>
     <h2>Languages</h2>
     <p>English — Professional working proficiency &nbsp;·&nbsp; Bangla — Native proficiency</p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <p class="refs">Available upon request.</p>
   </section>
 </body>
 </html>
