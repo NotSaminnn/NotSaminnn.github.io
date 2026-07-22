@@ -578,6 +578,16 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
 .award-card h3 { font-size: 1.06rem; margin-bottom: 0.2rem; }
 .award-card p { color: var(--text-muted); font-size: 0.92rem; }
 
+/* REFERENCES */
+.refs-grid { grid-template-columns: repeat(2, 1fr); }
+.ref-card { display: flex; align-items: flex-start; gap: 1.1rem; padding: 1.5rem 1.6rem; }
+.ref-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.ref-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--chip-bg); color: var(--brand); flex-shrink: 0; }
+.ref-card h3 { font-size: 1.06rem; margin-bottom: 0.25rem; }
+.ref-affil { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.35rem; }
+.ref-email { font-weight: 600; font-size: 0.92rem; word-break: break-word; }
+.ref-email:hover { text-decoration: underline; }
+
 /* CONTACT */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.4rem, 3vw, 2.2rem); align-items: start; }
 .contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -675,7 +685,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
 }
 
 @media (max-width: 620px) {
-  .interests-grid, .skills-grid, .awards-grid, .contact-cards { grid-template-columns: 1fr; }
+  .interests-grid, .skills-grid, .awards-grid, .refs-grid, .contact-cards { grid-template-columns: 1fr; }
   .brand-name { display: none; }
   .hero-stats { gap: 0.5rem; }
   .section-head { margin-bottom: 2rem; }
