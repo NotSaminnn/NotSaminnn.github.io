@@ -62,10 +62,10 @@
   var typingEl = $("#typing");
   if (typingEl) {
     var roles = [
-      "Computer Science graduate",
+      "Lecturer at DIU",
       "AI/ML researcher",
       "computer vision enthusiast",
-      "teaching assistant",
+      "educator",
       "lifelong learner"
     ];
     if (prefersReducedMotion) {
