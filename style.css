@@ -330,6 +330,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
 .timeline-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1rem; }
 .timeline-org { color: var(--brand-strong); font-weight: 600; margin: 0.35rem 0 0.7rem; font-size: 0.96rem; }
 .timeline-desc { color: var(--text-muted); }
+.timeline-thesis { margin-top: 0.6rem; }
 .timeline-card .tag-list { margin-top: 1rem; }
 
 /* --------------------------- 8. SECTION-SPECIFIC -------------------------- */

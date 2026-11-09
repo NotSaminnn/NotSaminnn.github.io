@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css?v=20261109" />
+  <link rel="stylesheet" href="style.css?v=20261109b" />
 
   <!-- No-flash theme boot: set the saved/system theme before first paint -->
   <script>
@@ -245,10 +245,11 @@
               (edge) AI on a low-cost wearable platform.
             </p>
             <p>
-              My newer work moves into <strong>3D vision</strong> and <strong>medical imaging</strong>: two papers
-              are under review, on collaborative Gaussian-splatting SLAM with phones and on when camera motion can
-              settle a scene's physical geometry, alongside finished manuscripts on wearable sleep staging and on
-              evaluating synthetic chest X-rays. See <a href="#ongoing">ongoing research</a>.
+              My newer work moves into <strong>3D vision</strong> and <strong>medical imaging</strong>. Three papers
+              are under review: my undergraduate thesis on camera-agnostic monocular 3D object detection, collaborative
+              Gaussian-splatting SLAM with phones, and when camera motion can settle a scene's physical geometry.
+              Finished manuscripts on wearable sleep staging and on evaluating synthetic chest X-rays are next. See
+              <a href="#ongoing">ongoing research</a>.
             </p>
           </div>
 
@@ -365,6 +366,10 @@
                 <strong>CGPA of 3.97 / 4.00</strong>, earning a place on the <strong>Dean's List</strong> for
                 academic excellence. Served as an Undergraduate Teaching Assistant and undergraduate researcher
                 alongside coursework, with four IEEE publications completed during the degree.
+              </p>
+              <p class="timeline-desc timeline-thesis">
+                <strong>Thesis:</strong> <em>CAMDet: Camera-Agnostic Monocular Metric 3D Object Detection with Learned
+                Intrinsic Feature Conditioning</em> (under&nbsp;review).
               </p>
               <ul class="tag-list">
                 <li class="tag">CGPA 3.97/4.00</li>
@@ -518,8 +523,37 @@
         </header>
 
         <!-- Under review -->
-        <h3 class="subsection-title work-group reveal">Under review &amp; preprints <span class="count-pill">2</span></h3>
+        <h3 class="subsection-title work-group reveal">Under review &amp; preprints <span class="count-pill">3</span></h3>
         <ul class="work-grid">
+          <li class="work-card work-card-wide card reveal" data-status="review">
+            <div class="work-body">
+              <div class="work-badges">
+                <span class="pub-badge badge-review">Under review</span>
+                <span class="pub-badge badge-next">B.Sc. thesis</span>
+              </div>
+              <p class="work-area">3D Vision · Monocular 3D Detection</p>
+              <h4 class="pub-title">CAMDet: Camera-Agnostic Monocular Metric 3D Object Detection with Learned Intrinsic Feature Conditioning</h4>
+              <p class="pub-authors">Reshad Ul Karim, Sammam Mahdi, <span class="me">Abrar Samin</span>, Syeda Maliha Tabassum, Rakin Bin Rabbani, Aniqua Nusrat Zereen</p>
+              <p class="work-desc">
+                Monocular metric 3D object detection that keeps its accuracy when moved to a camera it was never trained
+                on. A single DINOv2-DETR model predicts a 2D box, a per-object metric depth, and an amodal 3D box from one
+                shared query, while FiLM conditioning adapts its features to the supplied camera intrinsics. One exported
+                checkpoint runs unmodified from a desktop GPU down to an embedded Jetson module.
+              </p>
+            </div>
+            <ul class="work-stats" aria-label="Key results">
+              <li><span class="work-stat-num">46.9</span><span class="work-stat-label">AP3D at IoU 0.25 on SUN RGB-D (ViT-L)</span></li>
+              <li><span class="work-stat-num">+6.3 AP3D</span><span class="work-stat-label">over a virtual-depth baseline on unseen cameras</span></li>
+              <li><span class="work-stat-num">166 FPS</span><span class="work-stat-label">ViT-S throughput on an RTX 5090</span></li>
+            </ul>
+            <ul class="tag-list">
+              <li class="tag">Monocular 3D Detection</li>
+              <li class="tag">Camera Intrinsics</li>
+              <li class="tag">DINOv2-DETR</li>
+              <li class="tag">Edge Deployment</li>
+            </ul>
+          </li>
+
           <li class="work-card card reveal" data-status="review">
             <div class="work-body">
               <div class="work-badges">
