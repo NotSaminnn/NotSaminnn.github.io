@@ -125,6 +125,7 @@ Everything is plain text — open the files and edit. The most common changes:
 | **Skills** | `index.html` — `#skills` chips |
 | **Brand colors** | `style.css` — the `:root` and `[data-theme="dark"]` token blocks (start with `--brand`, `--grad`) |
 | **Typing roles** | `script.js` — the `roles` array |
+| **After editing CSS/JS** | Bump the `?v=` date on the `style.css` and `script.js` links in `index.html`, so visitors don't get new HTML with a cached old stylesheet (GitHub Pages caches for 10 min) |
 
 ### If you deploy under a subpath OR a custom domain
 
