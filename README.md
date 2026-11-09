@@ -120,6 +120,7 @@ Everything is plain text — open the files and edit. The most common changes:
 | **Contact email** | Search `abrarsamin100@gmail.com` in `index.html` and `script.js` and replace everywhere |
 | **Name / headline / bio** | `index.html` — hero and `#about` sections |
 | **Publications** | `index.html` — the `#publications` section (each `<li class="pub-card">`) |
+| **Ongoing research** | `index.html` — the `#ongoing` section (each `<li class="work-card">`; set `data-status` to `review`, `ready`, or `progress`) |
 | **Experience / education** | `index.html` — `#experience`, `#education` sections |
 | **Skills** | `index.html` — `#skills` chips |
 | **Brand colors** | `style.css` — the `:root` and `[data-theme="dark"]` token blocks (start with `--brand`, `--grad`) |

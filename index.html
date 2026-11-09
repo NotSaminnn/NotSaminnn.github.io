@@ -8,7 +8,7 @@
   <title>Abrar Samin — Lecturer at DIU, AI/ML Researcher</title>
   <meta name="description" content="Abrar Samin — Lecturer in the Department of Software Engineering at Daffodil International University, with four IEEE papers in ML, computer vision &amp; XAI." />
   <meta name="author" content="Abrar Samin" />
-  <meta name="keywords" content="Abrar Samin, Lecturer, Daffodil International University, DIU, Software Engineering, BRAC University, Computer Science, Machine Learning, Computer Vision, Explainable AI, XAI, Edge AI, Assistive Technology, Robotics, Full-Stack Development, Healthcare, WeHeal, IEEE, Researcher, Teaching Assistant, Dhaka, Portfolio" />
+  <meta name="keywords" content="Abrar Samin, Lecturer, Daffodil International University, DIU, Software Engineering, BRAC University, Computer Science, Machine Learning, Computer Vision, 3D Vision, Gaussian Splatting, SLAM, Medical Imaging, Explainable AI, XAI, Edge AI, Assistive Technology, Sleep Staging, EEG, Robotics, Full-Stack Development, Healthcare, WeHeal, IEEE, Researcher, Teaching Assistant, Dhaka, Portfolio" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
@@ -72,7 +72,7 @@
     "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "Bangladesh" },
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "BRAC University" },
     "knowsLanguage": ["English", "Bengali"],
-    "knowsAbout": ["Machine Learning", "Computer Vision", "Explainable AI", "Edge AI", "Assistive Technology", "Biomedical Signal Processing", "Robotics", "Full-Stack Web Development", "Data Structures and Algorithms"],
+    "knowsAbout": ["Machine Learning", "Computer Vision", "3D Computer Vision", "Medical Imaging", "Explainable AI", "Edge AI", "Assistive Technology", "Biomedical Signal Processing", "Robotics", "Full-Stack Web Development", "Data Structures and Algorithms"],
     "award": [
       "Dean's List for Academic Excellence, BRAC University",
       "2nd Place, BRAC University RoboSoccer Competition",
@@ -105,6 +105,7 @@
         <li><a class="nav-link" href="#interests">Research</a></li>
         <li><a class="nav-link" href="#education">Education</a></li>
         <li><a class="nav-link" href="#publications">Publications</a></li>
+        <li><a class="nav-link" href="#ongoing">Ongoing</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#experience">Experience</a></li>
         <li><a class="nav-link" href="#skills">Skills</a></li>
@@ -243,6 +244,12 @@
               mobility for blind and low-vision users — combining computer vision with efficient on-device
               (edge) AI on a low-cost wearable platform.
             </p>
+            <p>
+              My newer work moves into <strong>3D vision</strong> and <strong>medical imaging</strong>: two papers
+              are under review, on collaborative Gaussian-splatting SLAM with phones and on when camera motion can
+              settle a scene's physical geometry, alongside finished manuscripts on wearable sleep staging and on
+              evaluating synthetic chest X-rays. See <a href="#ongoing">ongoing research</a>.
+            </p>
           </div>
 
           <aside class="about-facts reveal" aria-label="Quick facts">
@@ -281,7 +288,7 @@
               <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 5c-5 0-9 4.5-9 7s4 7 9 7 9-4.5 9-7-4-7-9-7Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
             </span>
             <h3>Computer Vision</h3>
-            <p>Extracting structure from images and video — facial landmarks, MediaPipe pipelines, and vision for wearables.</p>
+            <p>Extracting structure from images and video — facial landmarks, MediaPipe pipelines, 3D reconstruction, and vision for wearables.</p>
           </li>
           <li class="card interest-card reveal">
             <span class="card-icon" aria-hidden="true">
@@ -309,7 +316,7 @@
               <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M3 12h3l2 6 4-14 2 8 1.5-4H21v2h-2.2l-2.6 6.9a1 1 0 0 1-1.9-.1L12.6 11 9.9 20.3a1 1 0 0 1-1.9.1L6 14H3v-2Z"/></svg>
             </span>
             <h3>Biomedical Signal Processing</h3>
-            <p>Learning from physiological signals like PPG — sleep staging and health insights from wearable sensors.</p>
+            <p>Learning from physiological signals such as PPG, wrist actigraphy, and EEG — sleep staging and health insights from wearable sensors.</p>
           </li>
         </ul>
       </div>
@@ -477,11 +484,167 @@
       </div>
     </section>
 
-    <!-- =============================== PROJECTS =============================== -->
-    <section id="projects" class="section">
+    <!-- =========================== ONGOING RESEARCH =========================== -->
+    <!-- Status colors come from data-status: "review", "ready", or "progress".
+         When a preprint goes live, add a link block to that card above .work-status, e.g.
+         <div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener">arXiv preprint</a></div> -->
+    <section id="ongoing" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">05 — Projects</span>
+          <span class="section-kicker">05 — Ongoing</span>
+          <h2 class="section-title">Ongoing research</h2>
+          <p class="section-sub">Papers under review, preprints on the way, and manuscripts nearing submission, spanning 3D vision, medical imaging, and biomedical signals.</p>
+        </header>
+
+        <h3 class="subsection-title reveal">Under review &amp; preprints</h3>
+        <ul class="work-list">
+          <li class="work-card card reveal" data-status="review">
+            <div class="pub-meta">
+              <span class="pub-badge badge-review">Under review</span>
+              <span class="pub-badge badge-preprint">Preprint</span>
+              <span class="pub-venue">3D Vision · Collaborative SLAM</span>
+              <span class="pub-year">2026</span>
+            </div>
+            <h4 class="pub-title">
+              CADENCE: Sensor-Grounded World-Consistent Gaussian SLAM for Collaborative Mobile Reconstruction
+            </h4>
+            <p class="work-desc">
+              Collaborative 3D Gaussian-splatting SLAM for several people mapping one space with the phones they
+              already carry. A sensor-grounded regional memory ranks which peer regions to check, only deterministic
+              geometric and physical tests can accept a cross-device link, and per-modality confidences decide what
+              an accepted peer may change, so one degraded phone cannot corrupt the shared map. Verified false links
+              stay below 0.5% on eight held-out Matterport3D houses, and a native iPhone app maps 15 Hz LiDAR in real
+              time at 20.3 ms p95 pose time.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Gaussian Splatting</li>
+              <li class="tag">Collaborative SLAM</li>
+              <li class="tag">Mobile AR</li>
+              <li class="tag">iPhone LiDAR</li>
+            </ul>
+            <p class="work-status">Under double-blind review · arXiv preprint coming soon</p>
+          </li>
+
+          <li class="work-card card reveal" data-status="review">
+            <div class="pub-meta">
+              <span class="pub-badge badge-review">Under review</span>
+              <span class="pub-badge badge-preprint">Preprint</span>
+              <span class="pub-venue">3D Vision · Identifiability</span>
+              <span class="pub-year">2026</span>
+            </div>
+            <h4 class="pub-title">
+              Less Than Meets the Eye: Action-Set Identifiability and Principled Abstention for 3D Physical Geometry
+            </h4>
+            <p class="work-desc">
+              A corridor, its reflection in a mirror, and a photo of it on a screen can produce the same image, yet a
+              hand would stop in three different places. Our method, Intervene3D, asks whether a bounded set of camera
+              motions can recover the physical explanation at all: it answers only when some available motion
+              separates every competing explanation, abstains otherwise, and picks the motion that separates the
+              weakest contending pair. Abstention cuts false physical certainty from 0.832 to 0.000 on a
+              pixel-identical benchmark, and on real photographs viewpoint selection lowers ambiguous-region error by
+              31.3% across all thirteen checkpoints.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">3D Vision</li>
+              <li class="tag">Depth Estimation</li>
+              <li class="tag">Selective Prediction</li>
+              <li class="tag">Active Perception</li>
+            </ul>
+            <p class="work-status">Under double-blind review · arXiv preprint coming soon</p>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title reveal">Ready for submission</h3>
+        <ul class="work-list">
+          <li class="work-card card reveal" data-status="ready">
+            <div class="pub-meta">
+              <span class="pub-badge badge-ready">Manuscript complete</span>
+              <span class="pub-venue">Biomedical Signals · Wearables</span>
+              <span class="pub-year">2026</span>
+            </div>
+            <h4 class="pub-title">
+              On-Device Sleep Staging from Wrist Actigraphy and Heart-Rate Variability: A CNN-SE-BiLSTM Sequence Modeling Approach
+            </h4>
+            <p class="pub-authors">
+              <span class="me">Abrar Samin</span>, Himika Tasnim, Aniqua Nusrat Zereen
+            </p>
+            <p class="work-desc">
+              Four-stage sleep staging (Wake, Light, Deep, REM) from a wrist wearable under a strictly
+              leakage-controlled, subject-independent protocol. A convolutional Squeeze-and-Excitation encoder feeds a
+              bidirectional LSTM, reaching 77.2% accuracy and Cohen's κ of 0.68, 7.9 points above logistic regression.
+              Knowledge distillation shrinks the model 3.28× for on-device use at a 0.4-point cost, and total sleep
+              time from the predicted hypnograms agrees closely with polysomnography (r = 0.96).
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Sleep Staging</li>
+              <li class="tag">CNN-SE-BiLSTM</li>
+              <li class="tag">Knowledge Distillation</li>
+              <li class="tag">On-Device AI</li>
+            </ul>
+            <p class="work-status">Manuscript complete · Preparing for journal submission</p>
+          </li>
+
+          <li class="work-card card reveal" data-status="ready">
+            <div class="pub-meta">
+              <span class="pub-badge badge-ready">Manuscript complete</span>
+              <span class="pub-venue">Medical Imaging · Generative AI</span>
+              <span class="pub-year">2026</span>
+            </div>
+            <h4 class="pub-title">
+              Patient-Referenced Evaluation of Clinical Findings and Re-Identification in Report-Conditioned Synthetic Chest Radiographs
+            </h4>
+            <p class="work-desc">
+              A patient-referenced protocol for testing what diffusion-generated chest X-rays carry beyond their text
+              prompt. Across three generators (ChexGen, RadEdit, RoentGen-v2) and three cohorts, generated images show
+              findings the prompt leaves out far less often than the patient's own radiograph, and adding the omitted
+              report text raises their detection by 14 to 34 percentage points. Against prompt-matched distractors, a
+              re-identification network recognizes the patient close to chance, compared with 85% to 92% for a second
+              real radiograph of the same patient.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Medical Imaging</li>
+              <li class="tag">Diffusion Models</li>
+              <li class="tag">Vision-Language Models</li>
+              <li class="tag">Privacy</li>
+            </ul>
+            <p class="work-status">Manuscript complete · Preparing for journal submission</p>
+          </li>
+        </ul>
+
+        <h3 class="subsection-title reveal">In progress</h3>
+        <ul class="work-list">
+          <li class="work-card card reveal" data-status="progress">
+            <div class="pub-meta">
+              <span class="pub-badge badge-progress">In progress</span>
+              <span class="pub-venue">Biomedical Signals · EEG</span>
+              <span class="pub-year">2026</span>
+            </div>
+            <h4 class="pub-title">
+              Hybrid Deep Learning and Signal–Spectrogram Fusion for EEG Classification
+            </h4>
+            <p class="work-desc">
+              Two complementary models for EEG classification. The first is a CNN → BiLSTM → GRU hybrid, benchmarked
+              against a Random Forest baseline with a full architecture ablation. The second is a dual-branch network
+              that fuses the raw signal with its STFT spectrogram through cross-attention, with gradient-based saliency
+              for interpretability. Both use leakage-safe preprocessing and validation-only model selection.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">EEG</li>
+              <li class="tag">CNN-BiLSTM-GRU</li>
+              <li class="tag">Cross-Attention Fusion</li>
+              <li class="tag">Explainable AI</li>
+            </ul>
+            <p class="work-status">Code and experiments complete · Manuscript in preparation</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============================== PROJECTS =============================== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">06 — Projects</span>
           <h2 class="section-title">Featured projects</h2>
           <p class="section-sub">Things I've built end-to-end — from an AI healthcare platform to autonomous robotics.</p>
         </header>
@@ -568,10 +731,10 @@
     </section>
 
     <!-- ============================== EXPERIENCE ============================== -->
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">06 — Experience</span>
+          <span class="section-kicker">07 — Experience</span>
           <h2 class="section-title">Research &amp; teaching experience</h2>
         </header>
 
@@ -661,10 +824,10 @@
     </section>
 
     <!-- ================================ SKILLS ================================ -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">07 — Skills</span>
+          <span class="section-kicker">08 — Skills</span>
           <h2 class="section-title">Technical skills</h2>
           <p class="section-sub">The tools I reach for across research and full-stack work.</p>
         </header>
@@ -731,10 +894,10 @@
     </section>
 
     <!-- ================================ AWARDS ================================ -->
-    <section id="awards" class="section section-alt">
+    <section id="awards" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">08 — Recognition</span>
+          <span class="section-kicker">09 — Recognition</span>
           <h2 class="section-title">Awards &amp; achievements</h2>
         </header>
 
@@ -771,10 +934,10 @@
     </section>
 
     <!-- ============================== REFERENCES ============================== -->
-    <section id="references" class="section">
+    <section id="references" class="section section-alt">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">09 — References</span>
+          <span class="section-kicker">10 — References</span>
           <h2 class="section-title">References</h2>
           <p class="section-sub">Academic supervisors and collaborators who can speak to my research and teaching.</p>
         </header>
@@ -805,10 +968,10 @@
     </section>
 
     <!-- =============================== CONTACT =============================== -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-kicker">10 — Contact</span>
+          <span class="section-kicker">11 — Contact</span>
           <h2 class="section-title">Let's work together</h2>
           <p class="section-sub">
             Open to research collaborations, PhD opportunities, and conversations about teaching.

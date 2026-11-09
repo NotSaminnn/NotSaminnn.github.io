@@ -64,11 +64,16 @@
   .pubcat.first { margin-top: 2px; }
   .pubnum { font-weight: 700; color: #10152b; }
   .refs { color: var(--muted); font-style: italic; }
+  .proj .row .title { font-size: 10.6px; }
+  .proj p { margin-bottom: 0; }
 
   /* Keep entries whole across page breaks — professional CV pagination */
   section { page-break-inside: avoid; break-inside: avoid; }
   .entry, .pub { page-break-inside: avoid; break-inside: avoid; }
   h2 { page-break-after: avoid; break-after: avoid; }
+  /* Long sections may split between entries rather than jump whole to the next page */
+  section.breakable { page-break-inside: auto; break-inside: auto; }
+  .pubcat { page-break-after: avoid; break-after: avoid; }
 </style>
 </head>
 <body>
@@ -94,7 +99,7 @@
     <p>Lecturer in the Department of Software Engineering at Daffodil International University, and a Computer
     Science and Engineering graduate of BRAC University (CGPA 3.97/4.00), graduating among the top of
     the department, with four IEEE-published research papers in machine learning, computer vision, and explainable
-    AI. Served as an Undergraduate Teaching Assistant for both Data Structures and Algorithms, mentoring 200+ students,
+    AI, and two further papers under review in 3D computer vision. Served as an Undergraduate Teaching Assistant for both Data Structures and Algorithms, mentoring 200+ students,
     and contributed to BRAC University-funded research under the Research Seed Grant Initiative (RSGI), including
     AI-based assistive technology for accessibility. Strong foundation in machine learning, NLP, computer vision, and
     full-stack development, with a keen interest in teaching, mentoring, and advancing applied AI research in a
@@ -158,6 +163,50 @@
       Next-word prediction,&rdquo; <span class="venue">in Proc. 2026 23rd Int. Joint Conf. on Computer Science and
       Software Engineering (JCSSE)</span>, Bangkok, Thailand, Jun. 2026, pp. 638&ndash;643, doi:
       <a href="https://doi.org/10.1109/JCSSE68839.2026.11596610">10.1109/JCSSE68839.2026.11596610</a>.
+    </div>
+  </section>
+
+  <section class="breakable">
+    <h2>Ongoing Research Projects</h2>
+    <div class="pubcat first">Under Review &amp; Preprints</div>
+    <div class="entry proj">
+      <div class="row"><span class="title">CADENCE: Sensor-Grounded World-Consistent Gaussian SLAM for Collaborative Mobile Reconstruction</span><span class="date">Under review</span></div>
+      <div class="sub">3D Vision &middot; Collaborative SLAM &mdash; under double-blind review; arXiv preprint forthcoming</div>
+      <p>Collaborative 3D Gaussian-splatting SLAM across smartphones in which only deterministic geometric and physical
+      tests can accept a cross-device link and per-modality confidences gate what a peer may change, so a degraded
+      device cannot corrupt the shared map; false links stay below 0.5% on eight held-out Matterport3D houses, and a
+      native iPhone app maps 15 Hz LiDAR in real time (20.3 ms p95 pose time).</p>
+    </div>
+    <div class="entry proj">
+      <div class="row"><span class="title">Less Than Meets the Eye: Action-Set Identifiability and Principled Abstention for 3D Physical Geometry</span><span class="date">Under review</span></div>
+      <div class="sub">3D Vision &middot; Identifiability &mdash; under double-blind review; arXiv preprint forthcoming</div>
+      <p>Intervene3D decides whether a bounded set of camera motions can tell a real scene apart from its mirror
+      reflection or an on-screen image, abstaining when no motion separates the explanations; abstention lowers false
+      physical certainty from 0.832 to 0.000 on a pixel-identical benchmark, and viewpoint selection lowers
+      ambiguous-region error by 31.3% on real photographs.</p>
+    </div>
+    <div class="pubcat">Manuscripts Ready for Submission</div>
+    <div class="entry proj">
+      <div class="row"><span class="title">On-Device Sleep Staging from Wrist Actigraphy and Heart-Rate Variability: A CNN-SE-BiLSTM Sequence Modeling Approach</span><span class="date">Manuscript complete</span></div>
+      <div class="sub"><b>Abrar Samin</b>, Himika Tasnim, and Aniqua Nusrat Zereen &mdash; preparing for journal submission</div>
+      <p>Leakage-controlled, subject-independent four-stage sleep staging from a wrist wearable: 77.2% accuracy and
+      Cohen&rsquo;s &kappa; of 0.68 (+7.9 points over logistic regression), a 3.28&times; distilled model for on-device
+      use, and total sleep time that agrees with polysomnography (r = 0.96).</p>
+    </div>
+    <div class="entry proj">
+      <div class="row"><span class="title">Patient-Referenced Evaluation of Clinical Findings and Re-Identification in Report-Conditioned Synthetic Chest Radiographs</span><span class="date">Manuscript complete</span></div>
+      <div class="sub">Medical Imaging &middot; Generative AI &mdash; preparing for journal submission</div>
+      <p>A patient-referenced protocol for what diffusion-generated chest X-rays carry beyond their prompt: across three
+      generators and three cohorts, renders show findings the prompt omits far less often than the patient&rsquo;s own
+      radiograph, and re-identification against prompt-matched distractors falls close to chance.</p>
+    </div>
+    <div class="pubcat">In Progress</div>
+    <div class="entry proj">
+      <div class="row"><span class="title">Hybrid Deep Learning and Signal&ndash;Spectrogram Fusion for EEG Classification</span><span class="date">In progress</span></div>
+      <div class="sub">Biomedical Signals &middot; EEG &mdash; code and experiments complete; manuscript in preparation</div>
+      <p>A CNN&ndash;BiLSTM&ndash;GRU hybrid benchmarked against a Random Forest baseline with a full architecture
+      ablation, and a dual-branch network fusing the raw signal with its STFT spectrogram via cross-attention, with
+      gradient-based saliency for interpretability.</p>
     </div>
   </section>
 

@@ -213,18 +213,18 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
   font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.5px;
   box-shadow: 0 6px 16px -8px var(--ring);
 }
-.brand-name { font-family: var(--font-display); font-size: 1.12rem; }
+.brand-name { font-family: var(--font-display); font-size: 1.12rem; white-space: nowrap; }
 
 .nav-menu { display: flex; align-items: center; gap: 0.15rem; }
 .nav-link {
   position: relative; display: inline-block;
-  padding: 0.5rem 0.62rem; border-radius: 8px;
+  padding: 0.5rem 0.5rem; border-radius: 8px;
   color: var(--text-muted); font-weight: 500; font-size: 0.92rem; white-space: nowrap;
 }
 .nav-link:hover { color: var(--heading); background: var(--bg-alt); }
 .nav-link.active { color: var(--brand-strong); }
 .nav-link.active::after {
-  content: ""; position: absolute; left: 0.62rem; right: 0.62rem; bottom: 0.28rem; height: 2px;
+  content: ""; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0.28rem; height: 2px;
   background-image: var(--grad); border-radius: 2px;
 }
 [data-theme="dark"] .nav-link:hover { background: #182036; }
@@ -507,6 +507,29 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
 .pub-note { font-size: 0.86rem; color: var(--text-muted); font-style: italic; }
 .pub-empty { text-align: center; color: var(--text-muted); padding: 2rem; }
 
+/* ONGOING RESEARCH — reuses the .pub-meta / .pub-title / .pub-badge styles, but
+   uses its own .work-card class so the publication filter never touches it. */
+.work-list { display: grid; gap: 1.1rem; }
+.work-card { padding: 1.5rem 1.6rem; border-left: 4px solid var(--border-strong); }
+.work-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.work-card[data-status="review"] { border-left-color: #d97706; }
+.work-card[data-status="ready"] { border-left-color: #16a34a; }
+.work-card[data-status="progress"] { border-left-color: var(--accent); }
+.work-desc { color: var(--text-muted); font-size: 0.97rem; margin-top: 0.15rem; }
+.work-card .pub-authors { margin-bottom: 0.55rem; }
+.work-card .tag-list { margin-top: 1rem; }
+.work-card .pub-links { margin-top: 0.9rem; }
+.work-status { margin-top: 0.9rem; font-size: 0.86rem; font-weight: 600; color: var(--text-muted); }
+.badge-review { background: rgba(217, 119, 6, 0.14); color: #92400e; }
+.badge-preprint { background: var(--chip-bg); color: var(--chip-text); }
+.badge-ready { background: rgba(22, 163, 74, 0.12); color: #166534; }
+.badge-progress { background: rgba(14, 116, 144, 0.12); color: var(--accent); }
+[data-theme="dark"] .work-card[data-status="review"] { border-left-color: #fbbf24; }
+[data-theme="dark"] .work-card[data-status="ready"] { border-left-color: #4ade80; }
+[data-theme="dark"] .badge-review { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+[data-theme="dark"] .badge-ready { background: rgba(74, 222, 128, 0.14); color: #4ade80; }
+[data-theme="dark"] .badge-progress { background: rgba(56, 189, 248, 0.16); }
+
 /* PROJECTS */
 .projects-list { display: grid; gap: 1.5rem; }
 .project-featured {
@@ -657,7 +680,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); line-h
   .contact-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 1040px) {
+/* Ten nav links need ~1115px on one line; below that, use the hamburger drawer. */
+@media (max-width: 1140px) {
   .nav-toggle { display: grid; place-items: center; }
   .nav-menu {
     position: fixed; inset: var(--header-h) 0 auto 0;
